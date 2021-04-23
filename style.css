@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar-brand {
@@ -37,7 +37,7 @@
   color: white;
   padding-top: 200px;
   font-weight: 200;
-  text-shadow: 1px 1px 1px rgb(3, 0, 0, 0.7);
+  text-shadow: 5px 5px 5px rgb(3, 0, 0, 1);
   font-size: 45px;
   padding-bottom: 30px;
 }
@@ -46,9 +46,116 @@
   font-weight: 500;
 }
 
-/* Panel CSS */
-.panel {
-  background-color: blueviolet;
+/* Info Panel */
+.info-panel {
+  position: absolute;
+  margin-top: -65px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  background-color: white;
+  padding: 30px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: 5px;
+  font-weight: 200;
+}
+
+/* Working Space */
+.working-space {
+  margin: 30px;
+  margin-top: 310px;
+  text-align: center;
+}
+
+.working-space h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.working-space h3 span {
+  font-weight: 500;
+}
+
+.working-space p {
+  font-size: 25px;
+  color: #acacac;
+  font-weight: 200;
+  margin: 30px 0;
+}
+
+/* Testimonial */
+.testimonial {
+  padding-top: 40px;
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.testimonial figure img {
+  display: block;
+  width: 60px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.testimonial figure img.primary {
+  width: 100px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.testimonial figure h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c2c5d;
+}
+
+.testimonial figure p {
+  font-size: 18px;
+  color: #acacac;
+  margin-top: -5px;
+}
+
+.testimonial figcaption {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+}
+
+.footer p {
+  color: #acacac;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 /* Utility */
@@ -63,7 +170,7 @@
   .navbar-brand,
   .nav-link {
     color: white !important;
-    text-shadow: 1px 1px 1px rgb(3, 0, 0, 0.7);
+    text-shadow: 5px 5px 5px rgb(3, 0, 0, 1);
   }
 
   .nav-link {
@@ -88,6 +195,24 @@
 
   .jumbotron .display-4 {
     font-size: 62px;
+  }
+
+  .working-space {
+    margin-left: 100px;
+    margin-top: 160px;
+    text-align: left;
+  }
+
+  .working-space h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-right: 80px;
+  }
+
+  .testimonial h5 {
+    font-size: 32px;
   }
 }
 /* End Desktop CSS Version */
